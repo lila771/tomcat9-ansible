@@ -1,0 +1,5 @@
+secret
+*.retry
+*.json
+ec2*
+*.pem
