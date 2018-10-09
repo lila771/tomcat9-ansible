@@ -28,7 +28,7 @@
   template: src=tomcat-users.xml dest=/opt/tomcat/conf/
 
 - name: Copy context.xml
-  file: src=context.xml dest=/opt/tomcat/webapps/manager/META-INF/context.xml owner=root group=root
+  template: src=context.xml dest=/opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: Create Tomcat unit file
   template: src=tomcat.service.j2 dest=/etc/systemd/system/tomcat.service
